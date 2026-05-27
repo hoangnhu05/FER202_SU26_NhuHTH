@@ -13,10 +13,9 @@ function AppNavbar() {
 
         <Navbar.Collapse id="main-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/" end>
-              🏠 Trang chủ
-            </Nav.Link>
-
+            <Nav.Link as={NavLink} to="/home">
+  🏠 Trang chủ
+</Nav.Link>
             <Nav.Link as={NavLink} to="/posts">
               📚 Bài viết
             </Nav.Link>
@@ -25,6 +24,9 @@ function AppNavbar() {
               ℹ️ Giới thiệu
             </Nav.Link>
           </Nav>
+            <Nav.Link as={NavLink} to="/registration">
+              📝 Register
+            </Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
